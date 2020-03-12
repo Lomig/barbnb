@@ -214,10 +214,15 @@ $navbarHeight: 65px;
         bottom: 0;
         background-color: $myBlack;
         background-position: center top;
+        padding: 64px 8px;
 
         li {
           width: 100%;
           text-align: right;
+
+          &.navbar-button {
+            margin: 10px 0;
+          }
 
           a {
             text-align: center;
@@ -416,4 +421,10 @@ a#navbarDropdown {
 *:focus {
   outline: 0;
   outline: none;
+}
+
+@media all and (max-width: 600px) {
+  .home {
+    padding: 0;
+  }
 }

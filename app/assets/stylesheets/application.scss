@@ -22,3 +22,9 @@ body {
   background: $myWhite;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    padding: 0 4px;
+  }
+}
