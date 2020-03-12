@@ -3,6 +3,7 @@
   border-radius: 8px;
   box-shadow: 2px 2px 20px 7px $shadow12;
   height: 340px;
+  margin: 16px 8px;
   overflow: hidden;
   width: 310px;
 
@@ -72,21 +73,4 @@
   .bar-ratings {
     margin-bottom: 10px;
   }
-}
-
-.card-bar-info.col-5 {
-  padding: 0;
-}
-
-.card-bar-info.col-3 {
-  padding: 0;
-}
-
-.bars-index > .col-5 {
-  padding: 0;
-}
-
-.bars-index-header {
-  padding-top: 50px;
-  margin-bottom: 20px;
 }
