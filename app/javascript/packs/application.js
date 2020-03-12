@@ -26,13 +26,12 @@ import "controllers";
 import "custom/button";
 import { initAutocomplete } from "custom/init_autocomplete";
 import { initAutocompleteSearch } from "custom/init_autocomplete";
-import { initMapbox } from '../custom/init_mapbox';
-import { initSlick } from '../custom/carousel';
+// import { initMapbox } from '../custom/init_mapbox';
+import { initSlick } from "../custom/carousel";
 
-document.addEventListener('turbolinks:load', () => {
-  initMapbox();
+document.addEventListener("turbolinks:load", () => {
+  // initMapbox();
   initAutocomplete();
   initAutocompleteSearch();
   initSlick();
-})
-
+});
