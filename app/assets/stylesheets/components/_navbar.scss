@@ -6,6 +6,10 @@ $navbarHeight: 65px;
   min-height: calc(100vh - 85px - 365px);
 }
 
+.searchbar-nav {
+  padding-top: 8px;
+}
+
 .custom-nav {
   width: 100%;
   height: $navbarHeight;

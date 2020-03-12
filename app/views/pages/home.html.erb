@@ -32,9 +32,7 @@
 
   <div class="top-bars-cards">
     <% @top_bars.each do |bar| %>
-      <div class="top-bar-card">
         <%= render "components/bar_card", bar: bar %>
-      </div>
     <% end %>
   </div> <!-- End top-bars-cards -->
 </div> <!-- End home-top-bars -->
