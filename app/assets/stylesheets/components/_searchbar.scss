@@ -1,25 +1,31 @@
-.search-form-control {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 1px solid #E7E7E7;
+.searchbar-form {
+  position: relative;
+  width: max-content;
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.searchbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e7e7e7;
+  height: 61px;
   opacity: 0.8;
-  margin: 5px;
-  width: 77%;
+  width: 525px;
+
+  &.small {
+    height: 50px;
+  }
 }
 
-textarea:focus, input:focus{
-    outline: none;
+.algolia-places {
+  width: 100%;
 }
 
-.searchbar-home {
-  width: 60%;
+textarea:focus,
+input:focus {
+  outline: none;
 }
-
-.searchbar-nav {
-  width: 50%;
-  line-height: normal;
-}
-
-.small-bar {
-  width: 64%;
-}
-
