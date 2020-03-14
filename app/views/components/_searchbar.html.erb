@@ -13,11 +13,13 @@
       method="get"
       accept-charset="utf-8"
       class="searchbar-form"
+      data-controller="places"
       >
       <input class="searchbar <%= "small" unless home %>"
              type="text"
              name="query"
              id="search_query"
+             data-target="places.addressInput"
              placeholder="Entrez une adresse..."
              />
       <%= unless index_bar
