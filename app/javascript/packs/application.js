@@ -7,7 +7,6 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
-require("turbolinks").start();
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -21,18 +20,9 @@ require("turbolinks").start();
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
+
 import "bootstrap";
 import "controllers";
 import "custom/button";
-import { initAutocomplete } from "custom/init_autocomplete";
-import { initAutocompleteSearch } from "custom/init_autocomplete";
-import { initMapbox } from '../custom/init_mapbox';
-import { initSlick } from '../custom/carousel';
-
-document.addEventListener('turbolinks:load', () => {
-  initMapbox();
-  initAutocomplete();
-  initAutocompleteSearch();
-  initSlick();
-})
-
