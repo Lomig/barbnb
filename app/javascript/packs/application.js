@@ -20,11 +20,9 @@ require("channels");
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
+
 import "bootstrap";
 import "controllers";
 import "custom/button";
-import { initSlick } from "../custom/carousel";
-
-document.addEventListener("turbolinks:load", () => {
-  initSlick();
-});

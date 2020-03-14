@@ -9,8 +9,8 @@
       stimulus_data = stimulus_data.html_safe
     end
 %>
-<div class="bar-show">
-  <div class="variable-width">
+<div class="bar-show" data-controller="carousel">
+  <div class="carousel">
     <% @bar.photos.each do |photo| %>
       <%= cl_image_tag photo.key, height: 400, crop: :fit %>
     <% end %>
