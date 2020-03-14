@@ -66,7 +66,7 @@ class BarsController < ApplicationController
         lat: bar.latitude,
         lng: bar.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { bar: bar }),
-        image_url: helpers.asset_url('barbie.png')
+        image_url: helpers.asset_pack_path('media/images/barbie.png')
       }
     end
   end

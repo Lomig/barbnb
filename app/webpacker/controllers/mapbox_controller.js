@@ -25,6 +25,11 @@ export default class extends Controller {
     );
   }
 
+  resize() {
+    console.log("tada");
+    this.map.resize();
+  }
+
   fitMapToMarkers(markers) {
     const bounds = new mapboxgl.LngLatBounds();
     markers.forEach(marker => bounds.extend([marker.lng, marker.lat]));

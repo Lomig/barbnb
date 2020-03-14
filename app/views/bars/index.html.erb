@@ -1,12 +1,16 @@
 <div class="bar-index" data-controller="mapbox">
   <div class="bar-cards">
-      <% @bars.each do |bar| %>
-          <%= render "components/bar_card", bar: bar %>
-      <% end %>
+    <% @bars.each do |bar| %>
+      <%= render "components/bar_card", bar: bar %>
+    <% end %>
   </div>
-  <div id="map"
-       data-target="mapbox.map"
-       data-markers="<%= @markers.to_json %>"
-       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  <div class="map-container">
+    <div id="map"
+         data-target="mapbox.map"
+         data-action="load@window->mapbox#resize
+                      resize@window->mapbox#resize"
+         data-markers="<%= @markers.to_json %>"
+         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
   </div>
 </div>
