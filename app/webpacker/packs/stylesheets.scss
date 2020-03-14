@@ -10,7 +10,9 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 
-@import "flatpickr/dist/flatpickr";
+@import "~flatpickr/dist/flatpickr";
+
+@import "~mapbox-gl/dist/mapbox-gl";
 
 // Import Internal Style sheets
-@import "../assets/stylesheets/application";
+@import "../stylesheets/application";
