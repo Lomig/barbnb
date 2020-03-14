@@ -17,4 +17,5 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~mapbox-gl/dist/mapbox-gl";
 
 // Import Internal Style sheets
+// Keep this at the bottom to enable CSS overide!
 @import "../stylesheets/application";
