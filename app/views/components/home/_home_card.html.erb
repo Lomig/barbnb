@@ -10,14 +10,14 @@ Usage:
 %>
 
 <% 
-image = local_assigns[:image]
+image = "media/assets/images/" + local_assigns[:image]
 title = local_assigns[:title]
 description = local_assigns[:description]
 color = local_assigns[:color]
 %>
 
 <div class="home-card <%= color %>">
-  <%= image_tag image, alt: "logo", class: "icon" %>
+  <%= image_pack_tag image, alt: "logo", class: "icon" %>
   <div class="home-card-title">
     <h4><%= title %></h4>
   </div>
